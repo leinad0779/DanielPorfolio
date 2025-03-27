@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Daniel Personal Portfolio</title>
+    <!-- <link rel="stylesheet" href="css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/16b0680ac6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Start Header -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="#"> <img src="img/Dsign.png" alt="dlogo" /></a>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Skills</a></li>
+            <li><a href="Work and services.html">Services</a></li>
+            <!-- <li><a href="#portfolio">Features</a></li> -->
+            <li><a href="Contact.html">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div>
+      </div>
+        <div class="header-text">
+          <p><span>UI/UX Designer</span></p>
+          <p> Web Developer</p>
+          <h1>
+            "Hi, I'm <span>Daniel G</span><br />
+            from the Philippines!"
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- END of HEADER -->
+    <!-- START ABOUT -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/daniel.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I’m Dan and a graphic designer / web developer. I specially working with brands to logos, web development application, brand identity and visual branding for marketing.My expertise extends beyond logos to encompass devise design projects that needed for any brand or company.I look closely with the client personality, understand their, visions, values and goals. I am committed to delivery outstanding outputs that leave a timeless impression.
+
+            </p>
+
+            
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('trainings')">Trainings</p>
+            </div>
+
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designed Web/App Interfaces</li>
+                <li><span>Web Development</span><br />Web App Devlopment</li>
+                <li>
+                  <span>Graphic Design</span><br />Logos, Branding,Marketing
+                </li>
+                <li>
+                  <span>Network</span><br />Server Network/Active Directory
+                  Set-up
+                </li>
+                <li><span>PC Assemble</span><br />Work Station Set-up</li>
+                <li>
+                  <span>Hardware/Software</span><br />Configurations of Hardware
+                  and Sotware Apps.
+                </li>
+                <li>
+                  <span>Data Entry Application</span><br />Database/Macro
+                  Application
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Accounting Officer </span><br />Insight Workforce
+                  Solutions Inc<br />January '2025 - April '2025
+                </li>
+                <li>
+                  <span>General Clerk</span><br />Makati Supermarket Alabg
+                  Branch<br />March 03,2024 - June 30, 2024
+                </li>
+                <li>
+                  <span>Failure Analyst Technician</span><br />Makati
+                  Supermarket Alabang Branch<br />October 27,2014 - January 16,
+                  2023
+                </li>
+                <li>
+                  <span>IT Technician</span><br />HGST a Western Digital
+                  Company<br />December 16,2009 - September 10,2012
+                </li>
+                <li>
+                  <span>Customer Service Provider</span><br />Picture City
+                  International Inc.<br />January 28,2005 - October 31,2005
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Bachelor of Technology</span><br />Technological
+                  University of the Philippines <br />SY:2011
+                </li>
+                <li>
+                  <span>Teaching Profession</span><br />Pamantasan ng Lungsod ng
+                  Muntinlupa<br />SY:2019-2020
+                </li>
+                <li>
+                  <span>Computer Engineering</span><br />Western Institute of
+                  Technology <br />
+                  SY: 1998-2000
+                </li>
+                <li>
+                  <span>Web Development</span><br />Muntinlupa City Technical
+                  Institute <br />
+                  SY:
+                </li>
+                <li>
+                  <span>Computer Systems Servicing</span><br />Muntinlupa City
+                  Technical Institute <br />
+                  SY:08/19/2024-10/4/2024
+                </li>
+                <!-- <li><span>PC Assemble</span><br>Work Station Set-up</li>
+        <li><span>Hardware/Software</span><br>Configurations of Hardware and Sotware Apps.</li>
+        <li><span>Data Entry Application</span><br>Database/Macro Application</li>  -->
+              </ul>
+            </div>
+            <div class="tab-contents" id="trainings">
+              <ul>
+                <li>
+                  <span
+                    >Utilizing Electronics Media in Facilitating trainings</span
+                  ><br />TESDA Online Program <br />
+                  10/4/2024-10/15/2024
+                </li>
+                <li>
+                  <span>Supervising Work-based Learning</span><br />TESDA Online
+                  Program <br />
+                  09/15/2024-09/30/2024
+                </li>
+                <li>
+                  <span>Career Boost with POWER BI</span><br />Exodus Expert<br />
+                  11/15/2023-11/16/2023
+                </li>
+                <li>
+                  <span>Media and Information Literacy in Today's World</span
+                  ><br />University of the Philippines Open University Online<br />
+                  07/03/2023-08/22/2023
+                </li>
+                <li>
+                  <span>Principle of Graphic Design</span><br />University of
+                  the Philippines Open University Online<br />
+                  02/13/2023-03/28/2023
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------- END ABOUT -------->
+
+    <!------- START SERVICE -------->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Work & Services</h1>
+        <div class="services-list">
+          <div>
+            <img
+              src="img/Screenshot 2025-03-04 230116-1.jpg"alt="scnweb" class="larawan"/>
+            <br/><i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              <br />Hic at eligendi saepe eum voluptas earum fugit as pernatur
+              distinctio ea culpa, quam voluptatum perferendis unde velit
+              excepturi odit perspiciatis sint provident.
+            </p>
+            <btn class="btn"><a href="/Work and services.html">See More</a></btn>
+          </div>
+          <div>
+            <img src="img/BRanDing.png" alt="scnweb" class="larawan" />
+            <br/><i class="fa-solid fa-eye"></i>
+            <h2>LOGO Design</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Hic at eligendi saepe eum voluptas earum fugit aspernatur
+              distinctio ea culpa, quam voluptatum perferendis unde velit
+              excepturi odit perspiciatis sint provident.
+            </p>
+            <btn class="btn"><a href="/Work and services.html">See More</a></btn>
+          </div>
+          <div>
+            <img
+              src="img/Ads.png"
+              alt="scnweb"
+              class="larawan"
+            />
+            <br/><i class="fa-brands fa-app-store"></i>
+            <h2>ADS Design</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Hic at eligendi saepe eum voluptas earum fugit aspernatur
+              distinctio ea culpa, quam voluptatum perferendis unde velit
+              excepturi odit perspiciatis sint provident.
+            </p>
+            <btn class="btn"><a href="/Work and services.html">See More</a></btn>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------END MY SERVICE------ -->
+    <!-- -------START PORFOLIO------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Hobbies & Interest</h1>
+        <div class="interest-list">
+          <div class="interest"><img src="img/travel.png" />
+            <div class="layer">
+              <h3>Social Travel</h3>
+              <p>
+                Unwind for a while. Be far away from the busy city.Travel far as you can. 
+                Visit Lei Travel and Tours page for you Booking and Accomodation.
+              </p>
+              <a href="https://www.facebook.com/leitravelandtours"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  cupiditate necessitatibus corporis. Inventore officia optio sapiente provident adipisci neque?</p> -->
+          <div class="interest">
+            <img src="img/donghua2.png" />
+            <div class="layer">
+              <h3>Donghua</h3>
+              <p>
+                Welcome in the world of Chinese Animation. An incredible graphic design style that almost human life form of animation.
+                visit <Youku class="tv">Youku</Youku> for more Donghua
+              </p>
+              <a href="https://youku.tv/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  cupiditate necessitatibus corporis. Inventore officia optio sapiente provident adipisci neque?</p> -->
+          <div class="interest">
+            <img src="img/app-screen-2.png" />
+            <div class="layer">
+              <h3>Music & Movie</h3>
+              <p>
+                Latest Music to listen and free Movie to watch just click the link below. 
+              </p>
+              <a href="https://music.youtube.com/channel/UCX1nchEcBshItKBeJvH-YMw"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  cupiditate necessitatibus corporis. Inventore officia optio sapiente provident adipisci neque?</p> -->
+        </div>
+        <a href="https://donghuaworld.com/" class="btn-tn">See More</a>
+      </div>
+    </div>
+    <!---------- END PORTFOLIO------- -->
+    <!---------- START CONTACT ME------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>dgut1979@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>09055307043</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/DanielG0779"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="/img/DGutierrezCV.pdf" download class="btn btn-tn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="text" name="Number" placeholder="Your Number" required />
+              <input type="email" name="Email" placeholder="Your Email" required/>
+              <textarea
+                name="Message"
+                rows="7"
+                placeholder="Your Message"></textarea>
+              <button type="Submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+          <script src="Google Sheets.js"></script>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>
+        Copyright &copy; Daniel G. Made with
+        <i class="fa-solid fa-heart"></i> by DGDeSign
+      </p>
+    </div>
+    <!-- ------------------------------------end contact---------------------- -->
+    <!-- ---------------------Script for TAB About Me----- -->
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <!-- ------------------Script for Navigation Menu------------ -->
+    <script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu(){ 
+    sidemenu.style.right ="-175px";         
+  }
+ </script>
+
+<!-- -------------------------------For Contact Form Scrip------------------- -->
+<form name="submit-to-google-sheet">
+  <!-- <input name="email" type="email" placeholder="Email" required>
+  <button type="submit">Send</button> -->
+</form>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxb-mGMJGvmye41D9WBa2QlnWfk1UvJ3jSEThSLW3PTcEXT0JsJu146s5nC-T58Djk9/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+      }, 5000 ) 
+      form.reset()
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    
+    </script>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="stylework.css" />
+    <title>Daniel Personal Portfolio</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/16b0680ac6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Start Header -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="#"> <img src="img/Dsign.png" alt="dlogo" /></a>
+          <ul id="sidemenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="Work and services.html">Skills</a></li>
+            <li><a href="Work and services.html">Services</a></li>
+            <!-- <li><a href="#portfolio">Features</a></li> -->
+            <li><a href="Contact.html">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      </div>
+        
+    <!-- END of HEADER -->
+    
+
+    <!------- START SERVICE -------->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Work & Services</h1>
+        <h2 class="B-Card">Business Card</h2>
+        
+        <div class="services-list">
+          <div><img src="img/calling card.png"alt="businesscard"class="image"/></div>
+          <div><img src="img/calling card back.png"alt="businesscard"class="image"/></div>
+          <div><img src="img/bznz.png"alt="businesscard"class="image"/></div>
+          <div><img src="img/bznz1.png"alt="businesscard"class="image"/></div>
+        </div>
+
+      
+    </div>
+    <div class="container">
+        <h2 class="B-Card">Logos</h2>
+        <div class="services-list">
+          <div><img src="img/Fgutz logo.png"alt="logo"class="image"/></div>
+         <div><img src="img/BdMedia Logo2.png"alt="logo"class="image"/></div>
+          <div><img src="img/lei logo.jpg"alt="logo"class="image"/></div>  
+          <div><img src="img/seo1.png"alt="logo"class="image"/></div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    
+    <div id="web">
+      <div class="container-w">
+        <h2> WEB PROJECTS</h2>
+        <div class="web-list">
+           <div class="larawan"><img src="img/Abe.jpg" />
+            <div class="layer">
+              <h3>Social Travel</h3>
+              <p>
+                Unwind for a while. Be far away from the busy city.Travel far as you can. 
+                Visit Lei Travel and Tours page for you Booking and Accomodation.
+              </p>
+              <a href="https://www.facebook.com/leitravelandtours"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>  
+
+          <div class="larawan"><img src="img/Bdmediaweb.jpg" />
+            <div class="layer">
+              <h3>Social Travel</h3>
+              <p>
+                Unwind for a while. Be far away from the busy city.Travel far as you can. 
+                Visit Lei Travel and Tours page for you Booking and Accomodation.
+              </p>
+              <a href="https://www.facebook.com/leitravelandtours"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>  
+
+          <div class="larawan"><img src="img/travel.png" />
+            <div class="layer">
+              <h3>Social Travel</h3>
+              <p>
+                Unwind for a while. Be far away from the busy city.Travel far as you can. 
+                Visit Lei Travel and Tours page for you Booking and Accomodation.
+              </p>
+              <a href="https://www.facebook.com/leitravelandtours"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>  
+          <div class="larawan"><img src="" />
+            <div class="layer">
+              <h3>Social Travel</h3>
+              <p>
+                Unwind for a while. Be far away from the busy city.Travel far as you can. 
+                Visit Lei Travel and Tours page for you Booking and Accomodation.
+              </p>
+              <a href="https://www.facebook.com/leitravelandtours"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>  
+
+        </div>
+      </div>
+    </div>
+  </div>
+       <!-- -------END MY SERVICE------ -->
+      
+       <div id="copyright">
+
+    <div class="copyright">
+      <p>
+        Copyright &copy; Daniel G. Made with
+        <i class="fa-solid fa-heart"></i> by DGDeSign
+      </p>
+    </div>
+    <!-- ------------------------------------end contact---------------------- -->
+    <script>
+      document.querySelectorall('.services-list img').forEach(image =>{ 
+        image.onclick=() =>{
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').scr = image.getAttribute('src');
+      } 
+         
+      });
+      document.querySelector('.popup-image span').onclick = () =>{
+        document.querySelector('.popup-image').style.display= 'none';
+      }      
+
+      </script>
+
+
+
+
+    <!-- ---------------------Script for TAB About Me----- -->
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <!-- ------------------Script for Navigation Menu------------ -->
+    <script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu(){ 
+    sidemenu.style.right ="-175px";         
+  }
+ </script>
+
+<!-- -------------------------------For Contact Form Scrip------------------- -->
+<form name="submit-to-google-sheet">
+  <!-- <input name="email" type="email" placeholder="Email" required> -->
+  <!-- <button type="submit">Send</button> -->
+</form>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxb-mGMJGvmye41D9WBa2QlnWfk1UvJ3jSEThSLW3PTcEXT0JsJu146s5nC-T58Djk9/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+      }, 5000 ) 
+      form.reset()
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    
+    </script>
+  </body>
+</html>
