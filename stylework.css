@@ -303,11 +303,11 @@ h1 span {
 
 /* ----------WEB AREA LAYOUT--------- */
 .container-w {
-  padding: 20px 10%;
+  padding: 70px 10%;
 }
 
 #web {
-  padding: 50px 0;
+  padding: 70px 0;
   margin-right: 0;
   background-position: cover;
 }
