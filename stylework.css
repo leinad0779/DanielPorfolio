@@ -316,12 +316,13 @@ h1 span {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   /* grid-template-columns: repeat(6, 1fr); */
   grid-gap: 20px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .larawan {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  padding: 10px;
 }
 .larawan img {
   width: 100%;
